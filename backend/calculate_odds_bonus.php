@@ -13,28 +13,27 @@ $inputValue = $_POST["inputValue"];
 $valueSplit = str_split($inputValue, 1);
 
 /*
- * Using foreach count and if to return all the odd-indexed values within the array.
+ * Using foreach and if not to return all the odd numbers within the array.
  */
 
-$i = 0;
 foreach ($valueSplit as $values) {
-    if  ($i % 2 == 0){
-        $odds[] = $values;
+    if ($values % 2 !== 0) {
+        $oddValues[] = $values;
     }
-    $i++;
 }
 
 /*
  * Using built-in php function "array_sum" to add all the numbers within the array.
+ * This function will give me all sequence numbers from 0 to the value I set in the input as an array.
  */
 
-$arraySum =  array_sum($odds);
+$arraySum =  array_sum($oddValues);
 
 /*
  * Final data / content that will be sent to ajax success and injected into a response div.
  */
 
-echo 'Split string into array, get odd-indexed values in array, then give us the sum of all odd values:';
+echo 'Split <strong>' . $inputValue . '</strong> into single values, add all even values to array then give us the sum of all even values:';
 echo '<hr><h3>= ' . $arraySum . '</h3><hr>';
 
 ?>

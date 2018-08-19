@@ -4,13 +4,9 @@ Very basic example of integer manipulation using vanilla PHP / html and ajax.
 
 There is three functions to manipulate a string of numbers inputted by a user.
 
-1. Take a string of numbers, split the string into an array of single even values, give us the even-indexed values within the array sum.
-2. Take a string of numbers, split the string into an array of single odd values, give us the odd-indexed values within the array sum.
-3. Get a sequence of numbers starting from 0 to an inputted value adding them all to an array and then work out the sum of all those numbers.
-
-** Two bonus functions added - Odds & evens
 1. Take a string of numbers, split the string into an array of single even values, then work out the sum of those even values.
 2. Take a string of numbers, split the string into an array of single odd values, then work out the sum of those odd values.
+3. Get a sequence of numbers starting from 0 to an inputted value adding them all to an array and then work out the sum of all those numbers.
 
 ## Possible bugs in current build
 1. The sequence calculation seems to be buggy on larger strings,
